@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "app": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-prebuild": "echo before inst",
+    "heroku-postbuild": "echo after inst"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +16,9 @@
     "express": "^4.17.3",
     "express-handlebars": "^6.0.3",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "14x",
+    "npm": "1.4.3"
   }
 }
